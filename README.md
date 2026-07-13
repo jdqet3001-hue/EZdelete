@@ -21,19 +21,3 @@ The default behavior of standard deletion commands (such as `rm` or the Windows 
 - **User Prompts**: Implements interactive confirmation prompts by default to prevent accidental data loss, with a `-f` flag available for automated or scripted environments.
 
 ---
-
-## Getting Started
-
-### Prerequisites
-
-- A C compiler (GCC or Clang).
-- Standard POSIX headers (available on Linux, macOS, and WSL).
-
-### Build Instructions
-
-Clone the repository and compile the source code:
-
-```bash
-git clone https://github.com/jdqet3001-hue/EZdelete.git
-cd EZdelete
-gcc -O2 -o ezdelete ezdelete.c
