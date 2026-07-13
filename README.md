@@ -16,7 +16,6 @@ The default behavior of standard deletion commands (such as `rm` or the Windows 
 
 - **Multi-Pass Overwriting**: Supports configurable overwrite passes (default: 3). Each pass writes a distinct pattern (e.g., `0x00`, `0xFF`, or pseudo-random data) to ensure data destruction.
 - **Optimized I/O Buffer**: Utilizes a dynamic buffer (default 16 MB) to handle large files efficiently, minimizing system calls and maximizing throughput.
-- **Zero Dependencies**: Built strictly with the standard C library (`libc`), ensuring portability across various Unix-like operating systems (Linux, macOS, WSL).
 - **Sync Enforcement**: Invokes `fsync()` to force the operating system to flush the overwritten buffers to physical storage, guaranteeing that the garbage data is written to the disk, not just the OS cache.
 - **User Prompts**: Implements interactive confirmation prompts by default to prevent accidental data loss, with a `-f` flag available for automated or scripted environments.
 
